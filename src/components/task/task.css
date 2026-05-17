@@ -1,0 +1,47 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font: "Inter", sans-serif;
+  line-height: 24px;
+  color: #1e2939;
+  gap: 1rem;
+}
+
+.task-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.edit-button,
+.delete-button {
+  font-size: 1.2rem;
+  padding: 0.25rem;
+  background: none;
+  border: none;
+}
+
+.edit-button {
+  color: #155dfc;
+}
+
+.delete-button {
+  color: #e7000b;
+}
+
+.edit-button:hover {
+  color: #184a94;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  color: #990005;
+  cursor: pointer;
+}

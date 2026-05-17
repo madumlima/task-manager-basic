@@ -1,12 +1,14 @@
 .task-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  /*border: 2px solid aqua;*/
+  flex-direction: column;
   width: 100%;
   flex-grow: 1;
+  gap: 0.8rem;
 }
 
 .no-tasks {
   color: #99a1af;
+  align-self: center;
 }
