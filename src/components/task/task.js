@@ -7,6 +7,7 @@ export default function Task() {
     <div className="task">
       <div className="task-wrapper">
         <input type="checkbox" className="checkbox"></input>
+        {/* This p will be replaced by an input when the edit-button is clicked */}
         <p>
           {" "}
           Task Name big name to test how long this goes more tests more tests
