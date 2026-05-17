@@ -7,12 +7,10 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import TaskInput from "../task_input/task_input";
 
-export default function Task() {
+export default function Task({ description }) {
   const [isEditing, setIsEditing] = useState(false);
 
-  const [taskText, setTaskText] = useState(
-    "Task Name big name to test how long this goes more tests more tests more",
-  );
+  const [taskText, setTaskText] = useState(description);
 
   const [draftText, setDraftText] = useState("");
 

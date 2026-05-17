@@ -9,6 +9,19 @@ import { FaPlus } from "react-icons/fa";
 export default function MainContainer() {
   const [newTaskText, setNewTaskText] = useState("");
 
+  const [taskList, setTaskList] = useState([]);
+
+  const handleAddClick = () => {
+    setTaskList([
+      ...taskList,
+      {
+        id: Date.now(),
+        description: newTaskText,
+      },
+    ]);
+    setNewTaskText("");
+  };
+
   return (
     <div className="main-container">
       <h1> Task Manager </h1>
@@ -18,12 +31,12 @@ export default function MainContainer() {
           onChange={(e) => setNewTaskText(e.target.value)}
           placeholder={"Enter a new task..."}
         ></TaskInput>
-        <button>
+        <button onClick={handleAddClick}>
           <FaPlus />
           Add
         </button>
       </div>
-      <TaskContainer></TaskContainer>
+      <TaskContainer taskList={taskList}></TaskContainer>
     </div>
   );
 }
