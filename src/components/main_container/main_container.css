@@ -7,7 +7,8 @@
 
   display: flex;
   width: 42rem;
-  height: 16.875rem;
+  min-height: 16.875rem;
+  max-height: 44rem;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   flex-direction: column;
   align-items: flex-start;

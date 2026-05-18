@@ -4,9 +4,12 @@
   align-items: center;
   justify-content: space-between;
   font: "Inter", sans-serif;
-  line-height: 24px;
   color: #1e2939;
   gap: 1rem;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 8px;
 }
 
 .task-wrapper {
