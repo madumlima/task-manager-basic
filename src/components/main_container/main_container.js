@@ -47,7 +47,10 @@ export default function MainContainer() {
 				onDelete={handleDeleteTask}
 			></TaskContainer>
 			{/* TODO: add the count of total tasks | completed tasks | pending tasks */}
-			<TaskCount totalTaskCount={taskList.length}></TaskCount>
+			<TaskCount
+				totalTaskCount={taskList.length}
+				pendingTaskCount={taskList.length}
+			></TaskCount>
 		</div>
 	);
 }
