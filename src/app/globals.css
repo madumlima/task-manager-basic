@@ -2,22 +2,30 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 :root {
-  background-color: #f9fafb;
-  font-family: "Segoe UI Emoji", sans-serif;
+	background-color: #f9fafb;
+	font-family: "Segoe UI Emoji", sans-serif;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 54.375rem;
-  padding: 1rem 27.46875rem;
-  flex-shrink: 0;
-  align-self: stretch;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	padding: 1rem 27.46875rem;
+	flex-shrink: 0;
+	align-self: stretch;
+	border: 3px solid purple;
+}
+
+@media (max-width: 800px) {
+	body {
+		width: 100vw;
+		flex-shrink: 1;
+	}
 }

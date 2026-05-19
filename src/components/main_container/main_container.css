@@ -1,50 +1,57 @@
 .main-container {
-  background-color: #fff;
-  border-radius: 0.625rem;
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.2),
-    0 4px 6px -4px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	border-radius: 0.625rem;
+	box-shadow:
+		0 10px 15px -3px rgba(0, 0, 0, 0.2),
+		0 4px 6px -4px rgba(0, 0, 0, 0.2);
 
-  display: flex;
-  width: 42rem;
-  min-height: 16.875rem;
-  max-height: 44rem;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.5rem;
+	display: flex;
+	max-width: 42rem;
+	min-width: 670px;
+	min-height: 16.875rem;
+	max-height: 44rem;
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.5rem;
+	border: 2px solid black;
 }
 
 .task-control {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
 }
 
 .task-control button {
-  display: flex;
-  padding: 11.5px 23.017px 14.5px 24px;
-  justify-content: center;
-  flex-grow: 0.5;
-  align-items: center;
-  gap: 8px;
-  border: none;
-  border-radius: 10px;
-  background: #2b7fff;
-  color: #fff;
-  text-align: center;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
+	display: flex;
+	padding: 11.5px 23.017px 14.5px 24px;
+	justify-content: center;
+	flex-grow: 0.5;
+	align-items: center;
+	gap: 8px;
+	border: none;
+	border-radius: 10px;
+	background: #2b7fff;
+	color: #fff;
+	text-align: center;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
 }
 
 .task-control button:hover {
-  cursor: pointer;
-  background: #1e5dbb;
+	cursor: pointer;
+	background: #1e5dbb;
 }
 
 .task-control button::after {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+@media (max-width: 800px) {
+	.main-container {
+	}
 }
