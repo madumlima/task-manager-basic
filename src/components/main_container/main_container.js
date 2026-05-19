@@ -60,7 +60,9 @@ export default function MainContainer() {
 				completedTaskCount={
 					taskList.filter((task) => task.isCompleted === true).length
 				}
-				pendingTaskCount={taskList.length}
+				pendingTaskCount={
+					taskList.filter((task) => task.isCompleted === false).length
+				}
 			></TaskCount>
 		</div>
 	);
