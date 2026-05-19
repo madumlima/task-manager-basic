@@ -1,0 +1,12 @@
+.task-count-container {
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-direction: row;
+	width: 100%;
+	flex-grow: 1;
+	gap: 0.25rem;
+	padding: 0.5rem;
+	border-top: 1px solid #99a1af;
+	color: #2e3135;
+}

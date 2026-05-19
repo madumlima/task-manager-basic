@@ -5,6 +5,7 @@ import "./main_container.css";
 import TaskContainer from "../task_container/task_container.js";
 import TaskInput from "../task_input/task_input";
 import { FaPlus } from "react-icons/fa";
+import TaskCount from "../task_count/task_count";
 
 export default function MainContainer() {
 	const [newTaskText, setNewTaskText] = useState("");
@@ -46,6 +47,7 @@ export default function MainContainer() {
 				onDelete={handleDeleteTask}
 			></TaskContainer>
 			{/* TODO: add the count of total tasks | completed tasks | pending tasks */}
+			<TaskCount totalTaskCount={taskList.length}></TaskCount>
 		</div>
 	);
 }
