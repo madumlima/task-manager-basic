@@ -35,6 +35,7 @@ export default function Task({ description, id, onDelete }) {
   return (
     <div className="task">
       <div className="task-wrapper task-content">
+        {/* TODO: Create a handleCheckClick function to add a line-through on the task once it's completed */}
         <input type="checkbox" className="checkbox"></input>
 
         {isEditing ? (
