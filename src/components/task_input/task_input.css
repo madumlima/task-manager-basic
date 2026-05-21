@@ -6,8 +6,23 @@
 	border: 1px solid #d1d5dc;
 	color: #0a0a0aa9;
 	width: 100%;
+	padding-right: 60px;
 }
 
 .char-limit-reached {
 	border: 1px solid red;
+}
+
+.input-container {
+	position: relative;
+	width: 100%;
+}
+
+.char-counter {
+	position: absolute;
+	right: 1rem;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.8rem;
+	color: #888;
 }

@@ -30,7 +30,7 @@ export default function TaskInput({ value, onChange, placeholder, onKeyDown }) {
 	};
 
 	return (
-		<>
+		<div className="input-container">
 			<input
 				type="text"
 				className={
@@ -44,6 +44,9 @@ export default function TaskInput({ value, onChange, placeholder, onKeyDown }) {
 				placeholder={placeholder}
 				onKeyDown={handleInternalKeyDown}
 			/>
-		</>
+			<span className="char-counter">
+				{value.length}/{charLimit}
+			</span>
+		</div>
 	);
 }
